@@ -1,0 +1,9 @@
+.dropdown-toggle {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    transform: translate3d(0px, 40px, 0px);
+}
+
+.DropdownButton {
+    background-color: beige;
+}

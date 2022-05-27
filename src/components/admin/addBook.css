@@ -1,0 +1,19 @@
+.open-button-container {
+    width: 15rem;
+    height: 2rem;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    color: #666666;
+    font-size: 11pt;
+    font-family: Roboto, sans-serif;
+    transition: all .3s;
+}
+
+#add-modal-author-select,
+#input-pub-date,
+#add-modal-publisher-select,
+#add-modal-genre-select {
+    width: 100%;
+}

@@ -1,0 +1,60 @@
+.add-actions-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background-color: white;
+    width: 85%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.add-book-container {
+    margin-top: 2%;
+}
+
+.open-button-container {
+    margin: auto;
+}
+
+/* AdminBook */
+.admin-book-list {
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    text-align: initial;
+}
+
+.admin-book {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: rgb(247, 247, 247);
+    width: 99%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.image-admin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 10rem;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-text {
+    padding-top: 2%;
+}
+
+/* AdminBookEdit */
+#add-modal-lastname-select,
+#add-modal-genre-select,
+#add-modal-publisher-select {
+    width: 100%;
+}

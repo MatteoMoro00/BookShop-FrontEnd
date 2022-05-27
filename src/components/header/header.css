@@ -1,0 +1,152 @@
+nav {
+    display: flex;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.nav-item {
+    width: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #202e7c;
+}
+
+.header-secondary-wrap {
+    background-color: white;
+    color: #202e7c;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+  
+.header-secondary-primary-wrap {
+    max-width: 1440px;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-secondary-primary-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.header-secondary-primary-wrap li {
+    font-size: 11pt;
+    margin-right: 30px;
+    padding-top: 10px;
+    height: 100%;
+    display: inline-block;
+    transition: box-shadow .3s;
+    color: #202e7c;
+}
+
+.header-secondary-primary-wrap li:hover {
+    box-shadow: inset 2px 2px 2px 2px  #202e7c;
+    border-bottom: 2px solid #202e7c;
+    cursor: pointer;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.header-secondary-wrap .right-section {
+    height: 100%;
+    background-color: #202e7c;
+    margin-right: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-genre {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav-item {
+    display: flex;
+    width: 10rem;
+}
+
+.join {
+    width: 10rem;
+    height: inherit;
+    padding-top: 3%;
+    display: flow-root;
+    margin: auto;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.total, .cart-wrap {
+    height: 50%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#wishlist-header-button-container,
+#admin-header-button-container {
+    border-top: 1px solid white;
+}
+
+#admin-header-button-container {
+    border-right: 1px solid white;
+}
+
+.wishlist-header-button,
+.admin-header-button {
+    margin: auto;
+    border: none;
+    background: #202e7c;
+    color: white;
+}
+
+.line {
+    border-left: 2px solid rgba(255, 255, 255, 0.84);
+}
+
+.cart-wrap {
+    transition: filter .3s;
+}
+
+.cart-wrap a:hover {
+    color: white;
+}
+
+.cart-wrap:hover {
+    filter: invert(0.2);
+    cursor: pointer;
+}
+
+#cart-nav-icon {
+    padding-top: 20%;
+    padding-left: 20%;
+}
+
+#cart-text {
+    display: flex;
+    margin: auto;
+}
+
+.cart-nav {
+    padding-top: 3%;
+}

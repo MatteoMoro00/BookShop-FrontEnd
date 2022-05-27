@@ -1,0 +1,16 @@
+.wishlist-wrapper {
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding: 10px 20px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.wishlist-title {
+    color: rgba(0, 0, 0, 0.695);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 10px;
+}

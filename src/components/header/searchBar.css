@@ -1,0 +1,110 @@
+.header-wrap {
+    color: #fff;
+    background-color: #202e7c;
+    position: relative;
+    z-index: 10;
+    height: 100px;
+}
+
+.header {
+    max-width: 1440px;
+}
+
+.header, .header-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.primary-wrap {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+}
+
+.primary-wrap .brand-link {
+    display: block;
+    width: 154px;
+    max-width: 100%;
+}
+
+.search-wrap {
+    margin: auto;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    float: right;
+    padding-top: 1.2%;
+}
+
+.search-icon {
+    display: inline;
+    width: 23px;
+    position: relative;
+    left: 18px;
+    color: rgb(124, 124, 124);
+}
+
+.text-input {
+    width: 60%;
+    height: 44px;
+    padding-left: 40px;
+}
+
+.header-search-btn, .header-advanced-search-btn {
+    width: 150px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 11pt;
+}
+
+.header-search-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(16, 187, 213);
+}    
+
+.header-search-btn :hover {
+    background-color: #29D5EF;
+}
+
+.header-advanced-search-btn {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all .3s;
+}
+
+.header-advanced-search-btn:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+.text {
+    color: white;
+}
+
+#logo-img {
+    width: 30%
+}
+
+.brand-wrap {
+    width: 500px;
+}
+
+.logo-container {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-image: url('../../asset/Book_STORE-removebg-preview.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -15px;
+}
+
+.logo-container:hover {
+    cursor: pointer
+}

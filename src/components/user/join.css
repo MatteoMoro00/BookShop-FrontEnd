@@ -1,0 +1,46 @@
+.login-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.login-nav-container {
+    padding: 5% 0;
+}
+
+.login-ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+.login-nav-item {
+    width: 8rem;  
+    height: 2.5rem;
+}
+
+.active {
+    color: rgb(85, 85, 169);
+    border-right: 1px solid rgb(85, 85, 169);
+    border-bottom: 3px solid rgb(85, 85, 169);
+}
+
+.active-register {
+    color: rgb(85, 85, 169);
+    border-left: 1px solid rgb(85, 85, 169);
+    border-bottom: 3px solid rgb(85, 85, 169);
+}
+
+.login-ul a {
+    color: grey!important;
+    text-decoration: none!important;
+}
+
+.username-container,
+.password-container,
+.button-container {
+    padding: 2%;
+}

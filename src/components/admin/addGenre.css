@@ -1,0 +1,17 @@
+.open-button-container {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    height: 2rem;
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #666666;
+    font-size: 11pt;
+    font-family: Roboto, sans-serif;
+    transition: all .3s;
+}
+
+.error-span {
+    color: rgb(255, 74, 74)!important;
+}

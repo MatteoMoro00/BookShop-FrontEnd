@@ -1,0 +1,86 @@
+.pagination-wrapper {
+    display: flex;
+}
+
+.pagination-container {
+    display: flex;
+    margin: auto;
+    padding-top: 3%;
+}  
+
+.pagination-item,
+.pagination-arrow {
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: #202e7c;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.pagination-item:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.5);
+}
+     
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    border-radius: 10px;
+}
+
+.dots:hover {
+    background-color: transparent;
+    cursor: default;
+}
+
+.selected-page {
+    background-color: white;
+    transform: scale(1.5);
+    color: #202e7c;
+}
+
+/* bootstrap btn-outline-primary */
+.btn-outline-primary {
+    color: #202e7c;
+    background-color: transparent;
+    background-image: none;
+    border-color: #202e7c
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #3d5aea;
+    border-color: #202e7c
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 135, 204, 0.5)
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #202e7c;
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #212529;
+    background-color: #3d5aea;
+    border-color: #202e7c
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 135, 204, 0.5)
+}
