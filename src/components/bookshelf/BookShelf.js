@@ -8,7 +8,6 @@ import './bookShelf.css';
 
 const BookShelf = (props) => {
     const dispatch = useDispatch();
-
     const list = useSelector((state) => state.books.books);
     const currentPage = useSelector((state) => state.books.currentPage);
     const pageSize = useSelector((state) => state.books.pageSize);

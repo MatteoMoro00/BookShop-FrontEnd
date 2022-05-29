@@ -104,7 +104,6 @@ export const fetchAsyncBooks = (currentPage, pageSize) => {
         page: currentPage - 1,
         size: pageSize
     }
-    console.log(currentPage);
     return (dispatch) => {
         axios.get(API_URL + "books", { params })
         .then(res => res.data).then((data) => {
@@ -165,7 +164,6 @@ export const searchBooksByTitleLike = (titleLike, currentPage, pageSize) => {
     return async (dispatch) => {
         await axios.get(API_URL + "books?titleLike=" + titleLike, { params })
         .then(res => res.data).then((data) => {
-            console.log(data);
             dispatch(bookActions.setBooks(data.content));
             dispatch(bookActions.setCurrentPage(data.number + 1));
             dispatch(bookActions.setTotalPages(data.totalPages));

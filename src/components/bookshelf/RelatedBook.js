@@ -7,7 +7,6 @@ import './relatedBook.css';
 const RelatedBook = (props) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
     const books = useSelector((state) => state.books.books);
     const related = useSelector((state) => state.relatedProduct.relatedProductsAuthor);
     const relatedFiltAuthor = related.filter((book) => book.id !== props.book.id);
@@ -44,8 +43,7 @@ const RelatedBook = (props) => {
                                         <div className="related-button-container">
                                             <button className="button-related-book" onClick={() => {
                                                 dispatch(bookActions.setBook(book)); 
-                                                navigate("/books/" + book.id); 
-                                                console.log(book.id)}}>
+                                                navigate("/books/" + book.id)}}>
                                                 View Details
                                             </button>
                                         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { bookActions, fetchAsyncBooks } from "../../store/bookSlice";
 import DropdownAuthors from "./DropdownAuthors";
 import DropdownGenre from "./DropdownGenre";
 import { getWishlistById } from "../../store/wishlistSlice";
@@ -13,11 +14,14 @@ import './header.css';
 const Header = (props) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const currentPage = useSelector((state) => state.books.currentPage);
+    const pageSize = useSelector((state) => state.books.pageSize);
+    const books = useSelector((state) => state.books.books);
     const cart = useSelector(state => state.cart.books);
     const quantity = useSelector(state => state.cart.quantity);
     const totalResult = cart.reduce((total, currentValue) => total = total + currentValue.price, 0);
     const localUser = JSON.parse(localStorage.getItem('user'));
-
+    
     const handleWishlistRequets = () => {
         dispatch(getWishlistById(localUser.id));
         navigate("/wishlist");
@@ -36,7 +40,10 @@ const Header = (props) => {
                         <ul className="nav">
                             <li className="nav-link">
                             <Link to="/">
-                                <div className="nav-item">
+                                <div className="nav-item" onClick={() => {
+                                    dispatch(bookActions.setPageSize(8));
+                                    dispatch(bookActions.setTotalPages(books.length / 8));
+                                    dispatch(bookActions.setCurrentPage(1))}}>
                                     <p>LIBRARY</p>
                                 </div>
                             </Link>

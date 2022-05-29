@@ -19,7 +19,6 @@ const genreSlice = createSlice({
         addGenre(state, action) {      
             state.genres.push(action.payload);
         },
-
         setGenre(state, action) {
             state.genre = action.payload;
         },

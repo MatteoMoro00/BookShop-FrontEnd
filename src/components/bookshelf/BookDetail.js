@@ -1,20 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faTruck, faCheckCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchAsyncBooks } from "../../store/bookSlice";
-import {cartActions} from '../../store/cartSlice';
-import './bookDetail.css';
-import { useState } from "react";
+import { cartActions } from '../../store/cartSlice';
 import { insertBookIntoWishlist, wishlistActions } from '../../store/wishlistSlice';
 import { searchRelatedBooksByAuthorId, searchRelatedBooksByGenreId } from '../../store/relatedProductSlice';
 import RelatedBook from "./RelatedBook";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faTruck, faCheckCircle, faHeart } from '@fortawesome/free-solid-svg-icons';
+import './bookDetail.css';
 
 const BookDetail = (props) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
     const book = useSelector((state) => state.books.book);
     const currentPage = useSelector((state) => state.books.currentPage);
     const pageSize = useSelector((state) => state.books.pageSize);

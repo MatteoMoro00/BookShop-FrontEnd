@@ -14,7 +14,7 @@ import './searchBar.css';
 const SearchBar = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    const books = useSelector((state) => state.books.books);
     const [titleLikes, setTitleLikes] = useState("");
     const listGenres = useSelector((state) => state.genres.genres);
     const listPublishers =  useSelector((state) => state.publishers.publishers);
@@ -62,6 +62,7 @@ const SearchBar = () => {
             return null;
         } else {
             dispatch(searchBooksByTitleLike(titleLikes, currentPage, pageSize));
+            setTitleLikes("");
             navigate("/");
         }
     };
@@ -92,7 +93,11 @@ const SearchBar = () => {
             <header className="header">
                 <div className="primary-wrap">
                     <div className="brand-wrap">
-                        <div className="logo-container" onClick={() => navigate("/")}></div>
+                        <div className="logo-container" onClick={() => {dispatch(bookActions.setPageSize(8));
+                                                                        dispatch(bookActions.setTotalPages(books.length / 8));
+                                                                        dispatch(bookActions.setCurrentPage(1));
+                                                                        navigate("/")}}>
+                        </div>                         
                     </div>
                     <div className="search-wrap">
                         <p className="search-icon"><FontAwesomeIcon icon={faSearch} className="search-icon" /></p>

@@ -21,7 +21,6 @@ import './App.css';
 
 function App() {
   const dispatch = useDispatch();
-
   const list = useSelector(booksSelector);
   const book = useSelector((state) => state.books.book);
   const localUser = JSON.parse(localStorage.getItem('user'));

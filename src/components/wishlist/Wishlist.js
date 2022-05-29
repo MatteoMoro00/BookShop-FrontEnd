@@ -8,7 +8,6 @@ const Wishlist = () => {
     const dispatch = useDispatch();
     const currentPage = useSelector((state) => state.books.currentPage);
     const pageSize = useSelector((state) => state.books.pageSize);
-
     const wishlist = useSelector((state) => state.wishlist.wishlist);
 
     useEffect(() => {                 

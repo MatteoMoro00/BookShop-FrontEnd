@@ -10,7 +10,6 @@ import "../admin/admin.css";
 const WishlistBook = (props) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
     const localUser = JSON.parse(localStorage.getItem('user'));
     const cartBooks = useSelector((state) => state.cart.books);
     const alreadyInCart = JSON.stringify(cartBooks).includes(JSON.stringify(props.book));
